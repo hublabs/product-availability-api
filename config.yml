@@ -1,0 +1,12 @@
+database:
+  product:
+    driver: mysql
+    connection: root:1234@tcp(127.0.0.1:3306)/hublabs_product_availability?charset=utf8&parseTime=True&loc=Local
+  stock:
+    driver: sqlite3
+    connection: product_availability.db
+services:
+  productApi:
+  colleagueAuthApi:
+  placeManagementApi:
+serviceName: product-availability-api
